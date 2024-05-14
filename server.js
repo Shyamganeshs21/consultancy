@@ -64,7 +64,7 @@ app.post('/submit', async (req, res) => {
 async function startServer() {
     await connectToMongoDB();
     app.listen(PORT, () => {
-        console.log(`Server is running on port http://localhost:${PORT}/`);
+        console.log(`Server is running on port http://localhost:${PORT}`);
     });
 }
 startServer();
